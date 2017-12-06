@@ -1,0 +1,15 @@
+.site-header {
+    background-color: #eab85b;
+}
+
+.byline{
+    margin: 2%;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
