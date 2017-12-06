@@ -8,16 +8,15 @@ let articles = [];
 function Article (rawDataObj) {
   // TODO: Use the JS object that is passed in to complete this constructor function:
   // Save ALL the properties of `rawDataObj` into `this`
-  // this.title= title;
-  // this.category = category;
-  // this.author = author;
-  // this.authorUrl = authorUrl;
-  // this.publishedOn = publishedOn;
-  // this.body = body;
-  this.rawDataObj = rawDataObj;
-  console.log ('whats happening: ', articles);
-  articles.push(this);
-
+  this.title= rawDataObj.title;
+  this.category = rawDataObj.category;
+  this.author = rawDataObj.author;
+  this.authorUrl = rawDataObj.authorUrl;
+  this.publishedOn = rawDataObj.publishedOn;
+  this.body = rawDataObj.body;
+  //this.rawDataObj = rawDataObj;
+  //articles.push(this);
+  console.log('whats happening: ', articles);
 
 }
 
@@ -56,6 +55,6 @@ for(let i = 0; i < rawData.length; i++) {
   articles.push(new Article(rawData[i]));
 }
 
-for(let i = 0; i < articles.length; i++) {
-  $('#articles').append(articles[i].toHtml());
-}
+// for(let i = 0; i < articles.length; i++) {
+//   $('#articles').append(articles[i].toHtml());
+// }
