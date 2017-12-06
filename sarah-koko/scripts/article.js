@@ -6,7 +6,6 @@ let articles = [];
 // it is an object constructor, the name is capitalized because of convention.  'This' refers to the object. 'rawDataObj represents the information we are putting into the constructor.  in this case it will be the object literal held at each index of the rawData array.
 
 function Article (rawDataObj) {
-
   this.title= rawDataObj.title;
   this.category = rawDataObj.category;
   this.author = rawDataObj.author;
@@ -14,13 +13,11 @@ function Article (rawDataObj) {
   this.publishedOn = rawDataObj.publishedOn;
   this.body = rawDataObj.body;
   console.log('whats happening: ', articles);
-
 }
 
 Article.prototype.toHtml = function() {
   // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
   // Cloning allows us to grab all the decendents of the parent element.
-
   let $newArticle = $('article.template').clone().removeClass('template').addClass('new-article');
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
@@ -42,7 +39,6 @@ rawData.sort(function(a,b) {
 rawData.forEach(function(ele) {
   articles.push(new Article(ele));
 })
-
 
 articles.forEach(function(ele) {
   $('#articles').append(ele.toHtml());
