@@ -1,3 +1,6 @@
+html, body {
+  font-family: sans-serif;
+}
 
 main {
   width: 100%;
@@ -7,6 +10,13 @@ main {
 main p {
   width: 100%;
 }
+
+.icon-home, .icon-address-book, .icon-twitter3, .icon-github {
+  color: rgb(119, 119, 119);
+  font-weight: lighter;
+  text-decoration: none;
+}
+
 /* smart phone */
 @media screen and (max-width: 640px) {
   .icon-menu {
