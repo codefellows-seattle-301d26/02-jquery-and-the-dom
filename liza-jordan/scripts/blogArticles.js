@@ -1,7 +1,7 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// The data is used in the for each loop. This is an array of object literals that has key / value pairs. Each object literal is used to represent each blog / article. 
 
 let rawData = [
   {
