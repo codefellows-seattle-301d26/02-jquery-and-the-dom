@@ -1,0 +1,82 @@
+@media screen and (max-width: 450px) {
+    a {
+      text-decoration: none;
+      color: #232323;
+      transition: color 0.3s ease;
+    }
+    
+    a:hover {
+      color: tomato;
+    }
+    
+    .menuToggle {
+        display: block;
+        position: relative;
+        top: 100%;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        float: right;
+    }
+    
+    .menuToggle input {
+      display: block;
+      width: 50px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -1px;
+      opacity: 0;
+      z-index: 2; 
+    }
+    
+    .menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: black;
+      border-radius: 3px;
+      z-index: 1;
+    }
+    
+    .menuToggle span:first-child {
+      transform-origin: 0% 0%;
+    }
+    
+    .menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+
+    .menu {
+      position: relative;
+      width: 100%;
+      margin-left: 140%;
+      margin-top: -40%;
+      padding: 100%;
+      background:  #FFEDA5;
+      list-style-type: none;
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    .menu li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+    .menuToggle input:checked ~ ul {
+      transform: none;
+    }
+    .center {
+      text-align: center;
+      display: block;
+  }
+
+    }
+
+  .template{
+    display: none;
+  }
+
