@@ -8,16 +8,18 @@ let articles = [];
 function Article (rawDataObj) {
   // TODO: Use the JS object that is passed in to complete this constructor function:
   // Save ALL the properties of `rawDataObj` into `this`
-  this.title = title;
-  this.category = category;
-  this.author = author;
-  this.authorUrl = authorUrl;
-  this.publishedOn = publishedOn;
-  this.body = body;
+ 
+  this.title = rawDataObj.title;
+  this.category = rawDataObj.category;
+  this.author = rawDataObj.author;
+  this.authorUrl = rawDataObj.authorUrl;
+  this.publishedOn = rawDataObj.publishedOn;
+  this.body = rawDataObj.body;
 }
 
 Article.prototype.toHtml = function() {
   // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
+  // we clone it because the objects are in an array and if changes are made it would update the array object. if the article copied, this is avoided.
   // PUT YOUR RESPONSE HERE
 
   let $newArticle = $('article.template').clone();
