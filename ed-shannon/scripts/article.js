@@ -7,12 +7,12 @@ let articles = [];
 
 function Article (rawDataObj) {
   this.title = rawDataObj.title;
-  this.category = rawDataObj.category;    
+  this.category = rawDataObj.category;
   this.author = rawDataObj.author;
   this.authorUrl = rawDataObj.authorUrl;
   this.publishedOn = rawDataObj.publishedOn;
   this.body = rawDataObj.body;
-  articles.push(this);     
+  articles.push(this);
 }
 
 Article.prototype.toHtml = function() {
@@ -25,6 +25,11 @@ Article.prototype.toHtml = function() {
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
 
+  $('.draft h1').text(this.title);
+  $('.draft a').text(this.author);
+  $('.draft a').attr('href', this.authorUrl);
+  $('.draft time').attr('datetime', this.publishedOn);
+  $('.draft .article-body').apppend(`<p>${this.body}</p>`);
   /* TODO: Now use jQuery traversal and setter methods to fill in the rest of the current template clone with values of the properties of this particular Article instance.
     We need to fill in:
       1. author name,

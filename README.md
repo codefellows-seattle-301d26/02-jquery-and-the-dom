@@ -90,6 +90,8 @@ _Your README.md must include:_
 
 12-06-2017 9:58 - completed constructor function.
 
+12-06-2017 10:37 - completed JQuery assignment to new articles
+
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 -->
