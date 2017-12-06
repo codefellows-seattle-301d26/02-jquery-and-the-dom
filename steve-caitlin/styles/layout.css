@@ -1,0 +1,35 @@
+body {
+  width: 100%;
+}
+
+.site-header {
+  width: 100%;
+}
+
+/* smart phone */
+@media screen and (max-width: 640px) {
+  .icon-home, .icon-address-book, .icon-twitter3, .icon-github {
+    font-size: 30px;
+  }
+  .main-nav ul {
+    padding-left: 2px;
+  }
+}
+
+/* desktop */
+@media not screen and (max-width: 640px) {
+  .icon-home, .icon-address-book, .icon-twitter3, .icon-github {
+    font-size: 3vw;
+  }
+  .main-nav ul {
+    padding-left: 5px;
+  }
+}
+
+.icon-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+  margin-left: 1em;
+}
