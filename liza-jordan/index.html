@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="vendor/styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="vendor/styles/icons.css">
+  <link rel="stylesheet" href="styles/icons.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
@@ -19,15 +19,18 @@
       </h1>
       <h2>The shocking power of static pages</h2>
     </section>
-    <nav class="main-nav">
-      <div class="icon-menu"></div>
-      <ul>
-        <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
-        <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
-        <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-        <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
+    <div class="menuToggle">
+      <input class="checkbox" type="checkbox"/>
+      <span></span>
+      <span></span>
+      <span></span>
+        <ul class="menu desktopmenu">
+        <li class="tab center" data-content="articles"><a href="#" class="icon-home link"> Home</a></li>
+        <li class="tab center" data-content="about"><a href="#" class="icon-address-book link"> About</a></li>
+        <li class="center"><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3 link"> Twitter</a></li>
+        <li class="center"><a href="http://github.com/brookr" target="_blank" class="icon-github link"> GitHub</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
   <main>
     <section id="articles">
