@@ -43,9 +43,11 @@ Article.prototype.toHtml = function() {
 //*****************Code Execution Below***************************************
 
 $(document).ready(function(){
-  $('.main-nav').hide();
+  $('.main-nav').hide(); 
+  console.log('afsdlfkjalkfjladkfjalskjdfl');
   $('.icon-menu').click(function(){
     $('.main-nav').slideDown();
+    console.log('worked');
   });
 });
 
