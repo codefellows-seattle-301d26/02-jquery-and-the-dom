@@ -1,0 +1,42 @@
+
+main {
+  width: 100%;
+  margin: 1%;
+}
+
+main p {
+  width: 100%;
+}
+/* smart phone */
+@media screen and (max-width: 640px) {
+  .icon-menu {
+    visibility: visible;
+
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* desktop */
+@media not screen and (max-width: 640px) {
+  .icon-menu {
+    visibility: hidden;
+  }
+  li{
+   display:inline-block;
+   vertical-align: top;
+  }
+}
+
+.heading-group-h1 h1 {
+  margin: 0;
+  padding-top: 1%;
+}
+
+.site-header {
+  background-color: #FFEAA9;
+}
+li {
+  list-style-type: none;
+}
