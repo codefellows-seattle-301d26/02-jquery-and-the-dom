@@ -1,0 +1,56 @@
+html, body {
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  margin: 1%;
+}
+
+main p {
+  width: 100%;
+}
+
+.icon-home, .icon-address-book, .icon-twitter3, .icon-github {
+  color: rgb(119, 119, 119);
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+/* smart phone */
+@media screen and (max-width: 640px) {
+  .icon-menu {
+    visibility: visible;
+  }
+  img {
+    width: 100%;
+  }
+  .main-nav li {
+    border-bottom: 2px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+/* desktop */
+@media not screen and (max-width: 640px) {
+  .icon-menu {
+    visibility: hidden;
+  }
+  li {
+    display:inline-block;
+    vertical-align: top;
+  }
+}
+
+.heading-group-h1 h1 {
+  margin: 0;
+  padding-top: 1%;
+}
+
+.site-header, .site-footer {
+  background-color: #FFEAA9;
+}
+li {
+  list-style-type: none;
+}
