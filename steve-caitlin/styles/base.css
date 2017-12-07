@@ -21,10 +21,14 @@ main p {
 @media screen and (max-width: 640px) {
   .icon-menu {
     visibility: visible;
-
   }
   img {
     width: 100%;
+  }
+  .main-nav li {
+    border-bottom: 2px solid #ccc;
+    margin: 5px;
+    padding: 5px;
   }
 }
 
@@ -33,9 +37,9 @@ main p {
   .icon-menu {
     visibility: hidden;
   }
-  li{
-   display:inline-block;
-   vertical-align: top;
+  li {
+    display:inline-block;
+    vertical-align: top;
   }
 }
 
@@ -44,7 +48,7 @@ main p {
   padding-top: 1%;
 }
 
-.site-header {
+.site-header, .site-footer {
   background-color: #FFEAA9;
 }
 li {

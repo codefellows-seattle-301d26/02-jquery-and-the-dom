@@ -1,22 +1,31 @@
 # Project Name
 
 **Author**: Caitlin Sweeney/ Steve Carpenter
-**Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 1.0.1 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+This is a blog application that generates articles based off of raw stored
+data fields for each section of a blog article.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+In order to get the code up and running, you'll need to clone the repository
+into a directory on your own machine. Once done, you will have to navigate
+into the steve-caitlin directory and run live-server or open the index.html
+file inside your browser. At this point, the JS code will build all the blog
+articles and insert them into the HTML page you're viewing using jQuery.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+This code utilizes the jQuery API, standard JS, and HTML. The CSS follows a
+SMACSS approach of trying to create clear and concise styling by separating
+the elements into files that make logical sense.
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+2017-12-07 8:40am - Updated the README and added in some additional styling
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+###Authors
+-Steve Carpenter
+-Caitlin Sweeney
+###External Resources
+-[jQuery](https://jquery.com/)
+-[SMACSS](https://smacss.com/)
