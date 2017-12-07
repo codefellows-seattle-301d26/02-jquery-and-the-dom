@@ -1,0 +1,31 @@
+
+.site-header {
+  width: 100%;
+}
+
+/* smart phone */
+@media screen and (max-width: 640px) {
+  .icon-home, .icon-address-book, .icon-twitter3, .icon-github {
+    font-size: 30px;
+  }
+  body {
+    width: 100vw;
+  }
+}
+
+/* desktop */
+@media not screen and (max-width: 640px) {
+  .icon-home, .icon-address-book, .icon-twitter3, .icon-github {
+    font-size: 3vw;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+.icon-menu {
+  position: absolute;
+  top: 1%;
+  right: 0%;
+  padding-right: 2px;
+}
