@@ -8,6 +8,7 @@ let articles = [];
 
 function Article (rawDataObj) {
   // TODO: Use the JS object that is passed in to complete this constructor function:
+  //Personal-Note: This is where we create our object constructor to take in information as raw data hence the function rawDataObj
   this.title= rawDataObj.title;
   this.category= rawDataObj.category;
   this.author = rawDataObj.author;
@@ -41,10 +42,13 @@ Article.prototype.toHtml = function() {
   $newArticle.find('h1').text(this.title);
   $newArticle.find('section').html(this.body);
   $newArticle.find('time').attr('datetime', this.publishedOn);
+  //Scott used .text(this.author); instead of .html(this.author); for security purposes!
+  //
       
 
   // REVIEW: Display the date as a relative number of 'days ago'
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+  //
   $newArticle.append('<hr>');
   return $newArticle;
 };
@@ -56,6 +60,26 @@ rawData.sort(function(a,b) {
 
 // TODO: Refactor these for loops using the .forEach() array method.
 
+// The 2 for looops below are the original for loops we turned into foreach loops
+//for(let i = 0; i > rawData.length; i++) {
+//   articles.push(new Article(rawData[i]));
+// }
+
+// for(let i = 0; i < articles.length; i++) {
+//   $('#articles').append(articles[i].toHtml());
+// }
+
+//this is the foreach loop scott used in class
+// rawData.forEach(functon(ele) {
+//   articles.push(new Article(ele))
+// });
+
+// this is how scott iterated the second for each loop
+//articles.forEach(function(ele) {
+//   $('#articles').append(ele.toHtml());
+// })
+
+//so value we used below is the (new Article(rawData[i])); replacement. It is set a parameter
 rawData.forEach(function(value){
   articles.push(new Article(value));
 });
