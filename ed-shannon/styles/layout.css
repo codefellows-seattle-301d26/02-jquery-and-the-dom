@@ -1,0 +1,75 @@
+header {
+    height: 25%;
+    width: 100%;
+    position: relative;
+}
+
+.show-menu {
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 7%;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.main-nav ul {
+    position: static;
+}
+
+.main-nav li {
+    padding: 1%;
+}
+
+.main-nav input[type=checkbox] {
+    display: none;
+}
+
+.main-nav input[type=checkbox]:checked ~ .menu {
+    display: block;
+    list-style: none;
+    width: 100%;
+}
+
+.site-header a {
+    padding: 1%;
+}
+
+.site-header {
+    background: #FFEDA5;
+    padding-bottom: 1%;
+}
+
+.byline, .byline address {
+    display: inline;
+}
+
+main {
+    width: 90%;
+    margin: 5%;
+}
+
+article img {
+    width: 100%;
+}
+
+header {
+    margin-top: 0%;
+}
+
+a {
+    color: grey;
+}
+
+@media screen and (min-width: 720px) {
+    
+    .menu li{
+        display: inline;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}

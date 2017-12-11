@@ -67,9 +67,9 @@ _Your repository must include:_
 _Your README.md must include:_
 
 ```md
-# Project Name
+# jQuery and the DOM
 
-**Author**: Your Name Goes Here
+**Author**: Shannon and Ed
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
@@ -84,7 +84,15 @@ _Your README.md must include:_
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+12-06-2017 9:00am - Reviewed each others projects from yesterday abd used Shannon's 01 lab starting point.
+
+12-06-2017 9:00am - Added script tags for jQuery and js starter files.
+
+12-06-2017 9:58 - completed constructor function.
+
+12-06-2017 10:37 - completed JQuery assignment to new articles
+
+12-06-2017 11:04 - Refactored for loops to .forEach iterations.
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
