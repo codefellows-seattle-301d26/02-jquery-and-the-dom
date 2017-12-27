@@ -62,7 +62,6 @@ _Your repository must include:_
 
 - Refactor all `for` loops using the `.forEach()` method.
 
-
 ## Documentation
 _Your README.md must include:_
 
