@@ -17,12 +17,12 @@ function Article (rawDataObj) {
 
 Article.prototype.toHtml = function() {
   // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
-  // Cloning allows us to grab all the decendents of the parent element.
+  // Cloning allows us to grab all the decedents of the parent element.
   let $newArticle = $('article.template').clone().removeClass('template').addClass('new-article');
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
   $newArticle.find('h1').html(this.title);
-  $newArticle.find('address a').html(this.author);
+  $newArticle.find('address a').html(this.author).attr('href', this.authorUrl).attr('target', this.authorUrl);
   $newArticle.find('article.new-article h1').html(this.title);
   $newArticle.find('section.article-body').html(this.body);
   $newArticle.find('time').html(this.publishedOn);
