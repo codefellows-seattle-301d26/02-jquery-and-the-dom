@@ -1,0 +1,25 @@
+.site-header {
+    background-color:  #FFEDA5;
+}
+
+.checkbox {
+    display: none;
+}
+
+.desktopmenu {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.pull-right {
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+    display: inline;
+}
